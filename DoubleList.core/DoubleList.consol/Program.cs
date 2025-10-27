@@ -29,7 +29,7 @@ do
         case "4":
             list.OrderDecently();
             Console.WriteLine("List sorted in descending order!");
-
+            Console.WriteLine(list.GetForward());
             break;
         case "5":
             var mode = list.GetMode();
@@ -64,6 +64,7 @@ do
                 list.Remove(remove);
                 Console.WriteLine("Occurrence removed");
             }
+            Console.WriteLine(list.GetForward());
             break;
         case "9":
             Console.Write("Enter the data to remove all occurrences: ");
@@ -73,6 +74,7 @@ do
                 list.RemoveAll(removeAll);
                 Console.WriteLine("All occurrences removed.");
             }
+            Console.WriteLine(list.GetForward());
             break;
 
         default:
